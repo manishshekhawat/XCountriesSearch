@@ -6,17 +6,18 @@ function App() {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    try{
+    
       fetch("https://xcountries-backend.azurewebsites.net/all")
       .then((resp) => resp.json())
       .then((data) => {
         setItem(data);
         console.log(data);
-      });
-    }
-    catch(error){
-      console.error(error);
-    }
+      })
+      .catch(error){
+        console.error("API fetch failed:", error);
+      }
+    
+    
     
   }, []);
 
