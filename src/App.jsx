@@ -6,12 +6,18 @@ function App() {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    fetch("https://xcountries-backend.azurewebsites.net/all")
+    try{
+      fetch("https://xcountries-backend.azurewebsites.net/all")
       .then((resp) => resp.json())
       .then((data) => {
         setItem(data);
         console.log(data);
       });
+    }
+    catch(error){
+      console.log(error);
+    }
+    
   }, []);
 
   return (
