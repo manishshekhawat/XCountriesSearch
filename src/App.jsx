@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Countries from "./countires";
+import Countries from "./Countries";
 
 function App() {
   //const number=[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]
