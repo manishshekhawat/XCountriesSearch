@@ -12,10 +12,9 @@ function App() {
       .then((data) => {
         setItem(data);
         console.log(data);
-      })
-      .catch(error){
+      }).catch((error)=>{
         console.error("API fetch failed:", error);
-      }
+      })
     
     
     
