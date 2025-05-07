@@ -13,7 +13,7 @@ function App() {
         setItem(data);
         console.log(data);
       }).catch((error)=>{
-        console.error("API fetch failed:", error);
+        console.error("Error fetching data:", error);
       })
     
     
