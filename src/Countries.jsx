@@ -4,6 +4,7 @@ const Countries = ({ name, flag }) => {
   return (
     <>
       <div
+      className="countryCard"
         style={{
           display: "flex",
           flexDirection: "column",
